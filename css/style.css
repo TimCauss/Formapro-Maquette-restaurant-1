@@ -2,26 +2,28 @@
 
 body  {
     width: 100%;
-    height: 73px;
     background: #FFFFFF;
 }
 
 header {
-    width: 100%;
+    /* width: 100%;
     height: 73px;
     margin: 15px auto;
     top: 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
 nav {
-    margin: 0 5% 0 0;
+    /* margin: 0 5% 0 0; */
+    font-family: 'poppins-regular';
+    font-size: 10px;
 }
 
 nav ul {
-    display: flex;
+    /*display: flex;
     flex-direction: row;
+    list-style: ;*/
 }
 
 nav li {
@@ -50,41 +52,39 @@ nav li a {
     top: 24.09px;
 }
 .section1 p {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
+    font-family: 'Poppins-bold';
     font-size: 16px;
-    line-height: 30px;
-    color: #BFC0CD;
+    color: #e9e9f0;
 }
 
-h3 {
+.text_slogan {
     color: rgba(223, 105, 81, 1);
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
+    font-family: 'poppins-bold';
     font-size: 20px;
-    line-height: 30px;
     text-transform: uppercase;
 }
 
-h1 {
-    font-family: 'Volkhov';
-    font-style: normal;
-    font-weight: 700;
+.text_welcome {
+    font-family: 'Volkhov-regular';
     font-size: 84px;
-    line-height: 89px;
-    letter-spacing: -0.04em;
     color: #FFFFFF;
+}
+
+.btn_carte {
+    color : white;
+    font-family: 'Volkhov-regular';
 }
 
 .discover {
     text-transform: uppercase;
-    font-family: 'poppins';
-    font-style: normal;
-    font-weight: 600;
+    font-family: 'poppins-regular';
+    font-weight: 700;
     font-size: 18px;
-    line-height: 27px;
-    text-align: center;
     color: rgba(94, 98, 130, 1)
+}
+
+.text_news {
+    font-family: "Volkhov-regular";
+    font-size: 50px;
+    color: #14183E
 }

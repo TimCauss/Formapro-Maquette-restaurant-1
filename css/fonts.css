@@ -1,40 +1,39 @@
 @font-face {
-    font-family: 'OpenSans';
+    font-family: 'OpenSans-bold';
     font-style: bold;
     src: url(/fonts/OpenSans-Bold.woff2);
 }
 @font-face {
-    font-family: 'OpenSans';
+    font-family: 'OpenSans-regular';
     font-style: normal;
     src: url(/fonts/OpenSans-Regular.woff2);
 }
 @font-face {
-    font-family: 'poppins';
-    font-style: bold;
-    src: url(/fonts/poppins-bold.woff2);
+    font-family: 'poppins-bold';
+    src: url(/fonts/poppins-bold.woff);
 }
 @font-face {
-    font-family: 'poppins';
+    font-family: 'poppins-italic';
     font-style: italic;
     src: url(/fonts/poppins-italic.woff2);
 }
 @font-face {
-    font-family: 'poppins';
+    font-family: 'poppins-regular';
     font-style: normal;
     src: url(/fonts/poppins-regular.woff2);
 }
 @font-face {
-    font-family: 'volkhov';
+    font-family: 'volkhov-bold';
     font-style: bold;
     src: url(/fonts/volkhov-bold.woff2);
 }
 @font-face {
-    font-family: 'volkhov';
+    font-family: 'volkhov-italic';
     font-style: italic;
     src: url(/fonts/volkhov-italic.woff2);
 }
 @font-face {
-    font-family: 'volkhov';
+    font-family: 'volkhov-regular';
     font-style: normal;
     src: url(/fonts/volkhov-regular.woff2);
 }
