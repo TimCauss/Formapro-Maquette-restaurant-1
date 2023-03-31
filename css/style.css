@@ -3,18 +3,20 @@
 body  {
     width: 100%;
     height: 73px;
-    margin: 0px;
-    top: 0px;
     background: #FFFFFF;
 }
 
 header {
-    display: flex;
     width: 100%;
     height: 73px;
-    margin: 15px;
+    margin: 15px auto;
     top: 0px;
+    display: flex;
     justify-content: space-between;
+}
+
+nav {
+    margin: 0 5% 0 0;
 }
 
 nav ul {
@@ -32,6 +34,10 @@ nav li a {
     font-size: 20px;
 }
 
+.logo_container {
+    margin: 0 0 0 5%;
+}
+
 .logo_head {
     width: 38.55px;
     height: 39.67px;
@@ -42,4 +48,35 @@ nav li a {
     height: 28.2px;
     left: 201.36px;
     top: 24.09px;
+}
+.section1 p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #BFC0CD;
+}
+
+h3 {
+    color: rgba(223, 105, 81, 1);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: 'Volkhov';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 89px;
+
+    /* or 106% */
+    letter-spacing: -0.04em;
+
+    color: #FFFFFF;
 }
