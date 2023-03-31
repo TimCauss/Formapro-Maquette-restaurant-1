@@ -74,9 +74,17 @@ h1 {
     font-weight: 700;
     font-size: 84px;
     line-height: 89px;
-
-    /* or 106% */
     letter-spacing: -0.04em;
-
     color: #FFFFFF;
+}
+
+.discover {
+    text-transform: uppercase;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: rgba(94, 98, 130, 1)
 }
