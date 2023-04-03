@@ -36,8 +36,18 @@ nav li a {
     font-size: 20px;
 }
 
+h1 {
+    font-family: 'Volkhov-regular';
+    font-size: 84px;
+    color: #FFFFFF;
+}
+
+h5 {
+    font-family: 'OpenSans-Bold';
+}
+
 .logo_container {
-    margin: 0 0 0 5%;
+    /* margin: 0 0 0 5%; */
 }
 
 .logo_head {
@@ -64,12 +74,6 @@ nav li a {
     text-transform: uppercase;
 }
 
-.text_welcome {
-    font-family: 'Volkhov-regular';
-    font-size: 84px;
-    color: #FFFFFF;
-}
-
 .btn_carte {
     color : white;
     font-family: 'Volkhov-regular';
@@ -87,4 +91,11 @@ nav li a {
     font-family: "Volkhov-regular";
     font-size: 50px;
     color: #14183E
+}
+
+.section2 > p, h5{
+    margin: 25px;
+    color: rgba(94, 98, 130, 1);
+    font-size: 20px;
+    font-family: ;
 }
