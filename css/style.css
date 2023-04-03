@@ -1,28 +1,64 @@
 @import url(/css/fonts.css);
 
 body  {
-    width: 100%;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    z-index: 5;
+    top: 0;
+    padding: 20px 0;
+    height: 30px;
+    position: sticky;
     background: #FFFFFF;
 }
 
-body >* {
-    margin-left:0px;
+.logo_container {
+    display: inline;
+    margin-left: 150px;
 }
 
-nav li {
-    margin-right: 30px;
+
+.logo_container img {
+    max-height: 100%;
+}
+.logo_head {
+    margin-right: 15px;
+}
+
+nav {
+    float: right;
+    margin-right: 150px;
+}
+
+ul {
+    display: table;
+    padding: 0px 0px;
+    padding: 0;
+    margin: 0;
+    border-spacing: 30px 0;
+}
+
+ul li {
+    list-style: none;
+    display: table-cell;
+    vertical-align: middle;
+    margin-right: 200px;
 }
 
 nav li a {
     color: black;
     text-decoration: none;
-    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 100;
 }
 
-header {
-    display: flex;
+nav li a:hover {
+    text-decoration: underline;
 }
-
 
 h2 {
     color: #14183E;
@@ -36,6 +72,7 @@ h1 {
     font-family: 'Volkhov-regular';
     font-size: 84px;
     color: #FFFFFF;
+    width: 40%;
 }
 
 h5 {
@@ -62,6 +99,14 @@ h5 {
     left: 201.36px;
     top: 24.09px;
 }
+
+.section1 {
+    background-image: url(/img/shutterstock_1721943142\ 1.png);
+    padding: 70px 150px;
+    background-origin: border-box;
+    background-size: cover;
+}
+
 .section1 p {
     font-family: 'Poppins-bold';
     font-size: 16px;
