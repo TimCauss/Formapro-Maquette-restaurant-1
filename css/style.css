@@ -19,6 +19,11 @@ nav li a {
     font-size: 20px;
 }
 
+header {
+    display: flex;
+}
+
+
 h2 {
     color: #14183E;
     font-weight: 700;
@@ -43,6 +48,8 @@ h5 {
 .poppins_r {
     font-family: 'Poppins-regular';
 }
+
+
 
 .logo_head {
     width: 38.55px;
