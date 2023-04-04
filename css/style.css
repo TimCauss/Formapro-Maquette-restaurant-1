@@ -80,10 +80,10 @@ nav li a {
 }
 
 nav li a:hover {
-    border-radius: 10px;
+/*     border-radius: 10px;
     background: #f1f1f1;
     box-shadow: inset 20px -20px 60px #ffffff,
-                inset -10px 10px 30px #e7e7e7;
+                inset -10px 10px 30px #e7e7e7; */
     text-decoration: underline;
 }
 
@@ -93,6 +93,8 @@ h2 {
     font-family: 'Volkhov-regular';
     font-size: 50px;
     line-height: 64.5px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 h1 {
@@ -164,10 +166,16 @@ h5 {
     cursor: pointer;
 }
 
-.text_news {
+/* .text_news {
     font-family: "Volkhov-regular";
     font-size: 50px;
     color: #14183E;
+    margin-top:10px;
+} */
+
+.section2 {
+    border: 1px solid black;
+    padding-top: 70px;
 }
 
 .section2 > p, h5{
@@ -180,13 +188,39 @@ h5 {
     font-weight: 550;
 }
 
-.section2 .discover {
-    text-transform: uppercase;
-    font-family: 'poppins-bold';
-    line-height: 27px;
+h4 {
+    font-weight: 600;
     font-size: 18px;
-    color: rgba(94, 98, 130, 1);
-    margin-top: 25px;
+    line-height: 27px;
+    color: #5e6282;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.card_container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card {
+    width: 315px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: fill;
+    border-radius: 15px 15px 0 0;
+}
+
+.card p{
+    font-family: "poppins-regular";
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #5e6282;
 }
 
 .section3 >p {
@@ -194,13 +228,6 @@ h5 {
     font-size: 16px;
     font-weight: bold;
     line-height: 30px;
-}
-
-h4 {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
-    color: rgba(94, 98, 130, 1);
 }
 
 .saumon {
