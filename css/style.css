@@ -78,9 +78,10 @@ nav li a {
 
 nav li a:hover {
     border-radius: 10px;
-    background: #e0e0e0;
-    box-shadow: inset -20px 20px 60px #e7e7e7,
-                inset 20px -20px 60px #ffffff;
+    background: #ffffff;
+    box-shadow: inset -31px 31px 62px #f0f0f0,
+                inset 31px -31px 62px #ffffff;
+    text-decoration: underline;
 }
 
 h2 {
