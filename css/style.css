@@ -108,6 +108,8 @@ h1 {
     margin-top: 40px;
     margin-bottom: 30px;
 }
+
+
 h5 {
     font-family: 'Poppins-bold';
     font-size: 15px;
@@ -174,7 +176,6 @@ h5 {
 } */
 
 .section2 {
-    border: 1px solid black;
     padding-top: 70px;
     text-align: center;
 }
@@ -201,6 +202,7 @@ h4 {
 .card_container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 50px;
     margin-bottom: 100px;
 }
@@ -272,32 +274,114 @@ h4 {
     margin-top: 260px;
 }
 
-.section3 >p {
-    color: white;
+.section3 {
+    background-image: url(/img/background_chef.png);
+    margin-top: 100px;
+    padding: 100px 0 600px 150px;
+    background-size: cover;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.video_container {
+    margin-bottom: 100px;
+}
+
+.video_container img {
+    border-radius: 20px;
+    width: 300px;
+}
+
+.play_container svg {
+    fill: #F1A501;
+    position:absolute;
+    z-index: 1;
+    margin-top: -230px;
+    left: 260px;
+    border: 5px solid white;
+    border-radius: 100%;
+    background-color: white;
+}
+
+svg:hover {
+    fill: #fdc64f;
+}
+
+.titre_section3 {
+    font-family: 'Volkhov-regular';
+    font-size: 84px;
+    color: #FFFFFF;
+    width: 50%;
+    background-image: url(/img/souligne_rose.svg);
+    background-repeat: no-repeat;
+    background-position: top 75px left 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.section3 p {
+    font-weight: 500;
     font-size: 16px;
-    font-weight: bold;
+    width: 30%;
+    color: white;
     line-height: 30px;
+}
+
+.wrapper {
+    position: absolute;
+    display: inline-block;
+    margin-top: -400px;
+}
+
+.wrapper img {
+    width: 520px;
+    height: 653px;
+    margin-left: -5px;
+}
+
+.section4 {
+    background-image: url(/img/illustration_commander.jpg);
+    padding-top: 300px;
+    padding-left: 200px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.section4 h2 {
+    text-align: left;
 }
 
 .saumon {
     color: rgba(223, 105, 81, 1);
 }
 
-.title{
+.section4 img {
+    width: 75px;
+    height: 75px;
+    margin-right: 20px;
+}
+
+.card_livraison {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: flex-start;
+    border: solid 1px black;
+    width: 250px;
+}
+
+.card_livraison a{
     font-weight: 700;
     font-size: 16px;
     line-height: 19.92px;
     color: black;
-    margin-left: 50px;
-    line-height: 50px;
     text-decoration-color: blue;
 }
 
-.url_details {
-    margin-left: 50px;
-    font-weight: 200;
-    color: #66666A;
-}
 
 .jadoo {
     margin-top: 0px
