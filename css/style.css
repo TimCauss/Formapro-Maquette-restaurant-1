@@ -24,6 +24,7 @@ header {
 .logo_container img {
     max-height: 100%;
 }
+
 .logo_head {
     height: 15px;
     width: 15px;
@@ -99,6 +100,11 @@ h1 {
     font-size: 84px;
     color: #FFFFFF;
     width: 50%;
+    background-image: url(/img/souligne_rose.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 14px left 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 h5 {
     font-family: 'Poppins-bold';
@@ -110,8 +116,6 @@ h5 {
 .poppins_r {
     font-family: 'Poppins-regular';
 }
-
-
 
 .logo_head {
     width: 38.55px;
@@ -127,33 +131,43 @@ h5 {
 
 .section1 {
     background-image: url(/img/shutterstock_1721943142\ 1.png);
-    padding: 70px 150px;
+    padding: 100px 150px;
     background-origin: border-box;
     background-size: cover;
 }
 
 .section1 p {
-    font-family: 'Poppins-bold';
     font-size: 16px;
     color: #BFC0CD;
+    margin-bottom: 40px;
 }
 
 .text_slogan {
     color: rgba(223, 105, 81, 1);
     font-family: 'poppins-bold';
     font-size: 20px;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
 .btn_carte {
-    color : white;
-    font-family: 'Volkhov-regular';
+    background-color : #F1A501;
+    color: white;
+    font: 18px Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    padding: 15px 20px;
+    border: none;
+}
+
+.btn_carte:hover {
+    background-color: hsl(41, 85%, 47%);
+    cursor: pointer;
 }
 
 .text_news {
     font-family: "Volkhov-regular";
     font-size: 50px;
-    color: #14183E
+    color: #14183E;
 }
 
 .section2 > p, h5{
