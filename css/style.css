@@ -260,7 +260,9 @@ h4 {
     object-fit: fill;
 }
 
-.card_small:hover::before {
+.card_small::before{
+    transition: transform 700ms, opacity 700ms;
+    transform: rotate(-90deg);
     content: " ";
     background-image: url(/img/decoration_rose.svg);
     position: absolute;
@@ -269,6 +271,12 @@ h4 {
     z-index: -1;
     margin-left: -95px;
     margin-top: 260px;
+    opacity: 0;
+}
+
+.card_small:hover::before {
+    opacity: 100;
+    transform: rotate(0deg);
 }
 
 .section3 {
@@ -533,6 +541,7 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    gap: 130px;
 }
 
 .ft_left {
@@ -570,6 +579,7 @@ footer > * {
 footer nav {
     display: flex;
     flex-direction: row;
+    gap: 25px;
 }
 
 footer nav ul{
