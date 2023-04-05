@@ -78,7 +78,6 @@
         </div>
         <button class="btn_carte" href:"#">Découvrir la carte</button>
     </section>
-    <button></button>
     <section class="section3 poppins_r">
         <div class="video_container">
             <img src="/img/visu_video.jpg" alt="image de Prévisualisation video">
@@ -100,53 +99,89 @@
     <section class="section4 poppins_r">
         <h4>RAPIDE ET PRATIQUE</h4>
         <h2><span class="saumon">Commandez</span><br> sur le site Jadoo</h2>
-            <div>
-                <div class="card_livraison">
-                    <img src="/img/logo_uberEats.png" alt="logo UberEats">
-                    <a href="#" class="title ubereats">UberEats<br>
-                    <span class="url_details"> tous vos plats depuis UberEats</span><br></a>
-                </div>
-                
-                <a href="#" class="title jadoo_url">Jaddo.fr<br><span class="url_details">Ou commandez en ligne sur le site officiel de Jadoo</span></a>
-                <p class="title">Livraison ultra rapide</p>
-                <p class="url_details">Soyez livré en 20 minutes maximum</p>
+            <div class="card_livr_container">
+                <a href="#">
+                    <div class="card_livraison">
+                        <img src="/img/logo_uberEats.png" alt="logo UberEats">
+                        <div class="url_livr">
+                            <p class="card_title">UberEats</p>
+                            <p class="url_details">Commandez tous vos plats depuis UberEats</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card_livraison">
+                        <img src="/img/logo_jadoo_1.svg" alt="Logo Jadoo">
+                        <div class="url_livr">
+                            <p class="card_title">Jadoo.fr</p>
+                            <p class="url_details">Ou commandez en ligne sur le site officiel de Jadoo</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card_livraison">
+                        <img class="logo_tr" src="/img/logo_transport.png" alt="Logo Transport">
+                        <div class="url_livr">
+                            <p class="card_title">Livraison ultra rapide</p>
+                            <p class="url_details tr">Soyez livré en 20 minutes maximum</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-        <h4>PRENDRE RENDEZ-VOUS</h4>
+            <button class="btn_carte btn_s4" href:"#">Découvrir la carte</button>
     </section>
     <section class="reservation">
-        <h2>Contactez-nous pour réserver au restaurant</h2>
-        <form action="" method="post">
-            <div>
-                <label for="name">Nom :</label>
-                <input type="text" name="user_name" id="name", value="Nom">
+        <h4>PRENDRE RENDEZ-VOUS</h4>
+        <h2>Contactez-nous<br> pour réserver au restaurant</h2>
+        <div class="fmain_container">
+            <div class="form_container1">
+                <form id="formulaire" action="" method="post">
+                    <p class="form_title">Formulaire de contact</p>
+                    <p class="form_fsentence">Remplissez le formulaire ci-dessous<br> pour nous contacter</p>
+                    <div>
+                        <label for="name">Nom </label>
+                        <input type="text" name="user_name" id="name", value="Nom">
+                    </div>
+                    <div>
+                        <label for="fname">Prénom </label>
+                        <input type="text" name="user_fname" id="fname" value="Prénom">
+                    </div>
+                    <div>
+                        <label for="mail">Adresse e-mail </label>
+                        <input type="email" name="user_mail" id="mail" value="monAdresseMail@gmail.com">
+                    </div>
+                    <div>
+                        <label for="msg">Message </label>
+                        <input type="text" id="msg" name="user_message" value="Votre message/demande de réservation">
+                    </div>
+                    <div class="button">
+                        <button type="submit"><img src="/img/check.svg" alt="icon check">Envoyer</button></div>
+                </form>
             </div>
-            <div>
-                <label for="fname">Prénom :</label>
-                <input type="text" name="user_fname" id="fname" value="Prénom">
+            <div class="form_container2"> 
             </div>
-            <div>
-                <label for="mail">Adresse e-mail :</label>
-                <input type="email" name="user_mail" id="mail" value="monAdresseMail@gmail.com">
-            </div>
-            <div>
-                <label for="msg">Message :</label>
-                <input type="text" id="msg" name="user_message" value="Votre message/demande de réservation">
-            </div>
-            <div class="button">
-                <button type="submit">Envoyer</button></div>
-            </form>
+        </div>
     </section>
     <footer class="poppins_r">
-        <p class="jadoo">Jadoo</p>
-        <p class="footer_slogan">Un voyage gastronomique entre le Japon et la France</p>
-        <ul>
-            <li class="nav_footer n_title">Restaurant</li>
-            <li class="nav_footer "><a href="#">Nouveautés</a></li>
-            <li class="nav_footer "><a href="#">Découvrir</a></li>
-            <li class="nav_footer "><a href="#">Commander</a></li>
-            <li class="nav_footer n_title">Contact</li>
-            <li class="nav_footer "><a href="#">Prendre RDV</a></li>
-        </ul>
+        <div class="ft_left">
+            <div class="jadoo">
+                <img src="/img/logo_jadoo_1.svg" alt="logo Jadoo">
+                <img src="/img/logo_jadoo_2.svg" alt="logo Jadoo 2">
+            </div>
+            <p>Un voyage gastronomique entre le Japon et la France</p>
+        </div>
+        <nav>
+            <ul>
+                <li class="nav_footer n_title">Restaurant</li>
+                <li class="nav_footer "><a href="#">Nouveautés</a></li>
+                <li class="nav_footer "><a href="#">Découvrir</a></li>
+                <li class="nav_footer "><a href="#">Commander</a></li>
+            </ul>
+            <ul>
+                <li class="nav_footer n_title">Contact</li>
+                <li class="nav_footer "><a href="#">Prendre RDV</a></li>
+            </ul>
+        </nav>
         <div class="uber_eats">
             <p>Télécharger UberEats</p>
         </div>

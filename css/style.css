@@ -70,7 +70,7 @@ ul li {
     vertical-align: middle;
 }
 
-nav li a {
+header nav li a {
     color: black;
     text-decoration: none;
     font-family: "OpenSans-Regular";
@@ -158,22 +158,19 @@ h5 {
     background-color : #F1A501;
     color: white;
     font: 18px Arial, Helvetica, sans-serif;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 15px 20px;
     border: none;
+    width: 200px;
+    height: 60px;
+    transition: transform 500ms;
 }
 
 .btn_carte:hover {
     background-color: hsl(41, 99%, 57%);
     cursor: pointer;
+    transform: scale(1.05);
 }
-
-/* .text_news {
-    font-family: "Volkhov-regular";
-    font-size: 50px;
-    color: #14183E;
-    margin-top:10px;
-} */
 
 .section2 {
     padding-top: 70px;
@@ -344,11 +341,13 @@ svg:hover {
 .section4 {
     background-image: url(/img/illustration_commander.jpg);
     padding-top: 300px;
-    padding-left: 200px;
+    padding-left: 150px;
+    padding-bottom : 75px;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: start;
+    justify-content: space-evenly;
 }
 
 .section4 h2 {
@@ -360,31 +359,223 @@ svg:hover {
 }
 
 .section4 img {
-    width: 75px;
-    height: 75px;
     margin-right: 20px;
+}
+
+.section4 a {
+    text-decoration: none;
+}
+
+.card_livr_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card_livraison {
     display: flex;
     flex-direction: row;
-    padding: 20px;
-    justify-content: flex-start;
-    border: solid 1px black;
-    width: 250px;
+    max-width: 400px;
+    height: 55px;
+    padding: 20px 20px 20px 0px;
+    align-content: center;
 }
 
-.card_livraison a{
+
+.url_livr {
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+}
+
+.card_title{
     font-weight: 700;
     font-size: 16px;
-    line-height: 19.92px;
     color: black;
-    text-decoration-color: blue;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
+.url_details {
+    font-family: 'poppins-regular';
+    font-size: 16px;
+    color: #3e3f43;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+.logo_tr{
+    margin-right: 50px;
+}
+
+.btn_s4 {
+    margin-top: 30px;
+}
+
+.reservation {
+    padding-top: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.reservation h4 {
+    font-family: 'poppins-regular';
+    font-weight: 600;
+    font-size: 18px;
+    color: #5e6282;
+}
+
+.reservation h2 {
+    font-family: 'volkhov-bold';
+    font-weight: 400;
+    font-size: 50px;
+    color: #14183e;
+}
+
+#formulaire {
+    font-family: 'poppins-regular';
+    font-weight: 500;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 20px;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+#formulaire .form_title {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+}
+
+form label+input {
+    width: 100%;
+}
+
+form :nth-child(3), form :nth-child(4), form :nth-child(5), form :nth-child(6){
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    width: 45%;
+}
+form :nth-child(5), form :nth-child(6){
+    width: 100%;
+}
+
+form .button {
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+}
+
+form button {
+    font-size: 18px ;
+    padding: 20px;
+}
+
+#formulaire .form_fsentence {
+    color: #8d8d8d;
+    margin:0;
+}
+
+.fmain_container {
+    display: flex;
+    flex-direction: row;
+    width: 1020px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #dedfe2;
+}
+
+.form_container1 {
+    height: 540px;
+    width: 50%;
+    border-radius: 20px 0 20px 0;
+    padding: 40px 20px;
+}
+.form_container2{
+    width: 50%;
+    background-image: url(/img/illustration_formulaire.jpg);
+    background-size: cover;
+    border-radius: 0 20px 20px 0px;
+}
+input {
+    font-family: 'poppins-regular';
+    font-weight: 500;
+    font-size: 13px;
+    color: #989898;
+    border: none;
+    border-bottom: 1px #989898 solid;
+    transition: transform 0.2s;
+}
+
+#formulaire button {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #007AFF;
+    border-radius: 5px;
+    border: none;
+}
+
+#formulaire button img {
+    margin-right:10px
+}
+
+footer {
+    margin-top: 50px;
+    padding-top: 82px;
+    padding-left:  192px;
+    background-color: #F3F3F3;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.ft_left {
+    font-family: 'Poppins-regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 147.5%;
+    max-width: 300px;
+}
 
 .jadoo {
-    margin-top: 0px
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 26.08px;
+}
+
+.jadoo:nth-child(1){
+    width: 55.51px ;
+    height: 57.13px;
+}
+
+.jadoo:nth-child(2){
+    width: 137.29px ;
+    height: 40.61px;
+}
+
+footer > * {
+    border: solid 1px black;
+    margin: 0;
+    padding: 0;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+}
+
+footer nav ul{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
 }
 
 .nav_footer {
