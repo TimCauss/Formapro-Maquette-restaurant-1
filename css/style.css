@@ -7,6 +7,7 @@ body  {
 
 body * {
     box-sizing: border-box;
+    transition: all 350ms;
 }
 
 header {
@@ -67,6 +68,7 @@ ul {
 ul li {
     list-style: none;
     margin-right: 10px;
+    transition: none;
 }
 
 header nav li a {
@@ -110,6 +112,7 @@ h1 {
     background-position: bottom 14px left 10px;
     margin-top: 40px;
     margin-bottom: 30px;
+    transition: all 350ms;
 }
 
 
@@ -138,8 +141,9 @@ h5 {
 
 .section1 {
     background-image: url(/img/shutterstock_1721943142\ 1.png);
-    padding: 100px 150px;
-    background-origin: border-box;
+    padding: 50px 10% 50px 10%  ;
+    display: flex;
+    flex-flow: column wrap;
     background-size: cover;
 }
 
@@ -685,17 +689,78 @@ footer nav ul{
         visibility: visible;
         width: auto;
     }
+    .section1 {
+        padding-top: 45.86px;
+        justify-content: center;
+        text-align: center;
+    }
+    .section1 h1 {
+        width: 100%;
+        background-size: auto;
+        background-position: bottom 10px left 250px;
+    }
+    .section1 article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .section1 p {
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: center;
+        
+    }
+}
+@media (max-width: 725px){
+    .section1 h1 {
+        font-family: "Volkhov-regular";
+        font-weight: 700;
+        line-height: 54px;
+        letter-spacing: -0.04em;
+        text-align: center;
+        font-size: 51px;
+        background-size: 50%;
+        background-position: bottom 0px left 300px;
+    }
+}
+
+@media (max-width: 725px){
+    .section1 h1 {
+        background-size: 50%;
+        background-position: bottom 0px left 150px;
+    }
+    
 }
 
 @media (max-width: 500px){
+    header >* {
+        padding: 0;
+        margin: 0;
+    }
     header nav ul li:last-child {
         visibility: collapse;
         width: 0px;
     }
-    nav {
+    header nav {
+        width: 0px;
         visibility: collapse;
     }
+    header ul {
+        width: 0;
+    }
     header {
-        justify-content: space-between;
+        justify-content: end;
+    }
+    header .btn_burger {
+        margin-right: auto;
+    }
+    header .logo_container {
+        padding-left: 0;
+        justify-self: end;
+        margin-right: 20px;
     }
 }
