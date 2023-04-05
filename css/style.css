@@ -2,33 +2,35 @@
 
 body  {
     background: #FFFFFF;
-    box-sizing: border-box;
     margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
 }
 
 header {
     z-index: 5;
     top: 0;
-    padding: 20px 0;
-    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 70px;
     position: sticky;
     background: #FFFFFF;
 }
 
 .logo_container {
-    display: inline;
     margin-left: 150px;
-}
-
-
-.logo_container img {
-    max-height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 18.11px;
 }
 
 .logo_head {
-    height: 15px;
-    width: 15px;
-    margin-right: 15px;
+    width: 38.55px;
+    height: 39.67px;
     transition: transform 150ms ease-out, transform 150ms ease-out;
 }
 
@@ -53,41 +55,39 @@ header {
 }
 
 nav {
-    float: right;
-    margin-right: 150px;
+    display: flex;
+    margin-right: 130px;
 }
 
 ul {
-    
-    padding: 0px 0px;
-    padding: 0;
+    display: flex;
+    align-items: center;
     margin: 0;
 }
-
 ul li {
     list-style: none;
-    display: inline-block;
-    vertical-align: middle;
+    margin-right: 10px;
 }
 
 header nav li a {
-    color: black;
+    color: #212832;
     text-decoration: none;
     font-family: Arial;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     line-height: 17px;
     letter-spacing: 0em;
-    text-align: left;    
-    padding: 0.7em 1.7em;
+    text-align: left;
+    padding: 20px 20px 25px 20px;
+    margin: 0;
+    border-radius: 15px 15px 0 0;
+    background: linear-gradient(#ffff, #ffff 50%, #ffcf68 50%, #ffcf68);
+    background-size: 100% 200%;
+    transition: background 300ms;
 }
 
 nav li a:hover {
-    border-radius: 10px;
-    background: #ffffff;
-    box-shadow: inset -31px 31px 62px #f0f0f0,
-                inset 31px -31px 62px #ffffff;
-    text-decoration: underline;
+    background-position: 100% 100%;
 }
 
 h2 {
@@ -641,8 +641,61 @@ footer nav ul{
     text-align: left;
 }
 
-@media (max-width: 1025px){
-    header nav {
-        
+.btn_burger {
+    position: fixed;
+    background-color: white;
+    border: none;
+    padding: 0;
+    margin: 0;
+    visibility: collapse;
+}
+
+@media (max-width: 1080px){
+    body * {
+        padding: 0;
+        margin: 0;
+    }    
+    .logo_container {
+        margin: 0;
+    }
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+    }
+
+    .btn_burger {
+        display: flex;
+        position:relative;
+        visibility: visible;
+
+    }
+    .btn_burger button {
+        background-color: white;
+        border: none;
+        margin-right: min(20px);
+    }
+    header nav ul li{
+        visibility: collapse;
+        width: 0px;
+    }
+    header nav ul li:last-child {
+        visibility: visible;
+        width: auto;
+    }
+}
+
+@media (max-width: 500px){
+    header nav ul li:last-child {
+        visibility: collapse;
+        width: 0px;
+    }
+    nav {
+        visibility: collapse;
+    }
+    header {
+        justify-content: space-between;
     }
 }
