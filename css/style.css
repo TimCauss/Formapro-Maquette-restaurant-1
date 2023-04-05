@@ -536,12 +536,16 @@ input {
 footer {
     margin-top: 50px;
     padding-top: 82px;
-    padding-left:  192px;
     background-color: #F3F3F3;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 130px;
+}
+
+footer p, footer a {
+    color: #5E6282;
+    text-decoration: none;
 }
 
 .ft_left {
@@ -571,7 +575,6 @@ footer {
 }
 
 footer > * {
-    border: solid 1px black;
     margin: 0;
     padding: 0;
 }
@@ -579,7 +582,7 @@ footer > * {
 footer nav {
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 55px;
 }
 
 footer nav ul{
@@ -598,10 +601,39 @@ footer nav ul{
     text-decoration: none;
 }
 
-.nav_footer a {
-    text-decoration: none;
-    color: black;
-}
 .nav_footer a:hover {
     text-decoration: underline;
+}
+
+.btnft-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 7px;
+}
+
+.btn_footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 7px;
+    border: none;
+    border-radius: 25px;
+    width: 50%;
+}
+
+.uber_eats {
+    width: 221.17px ;
+}
+
+.ftright{
+    margin-top: 0px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    text-align: center;
+    justify-content: center;
+    font-family: Poppins-regular;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
 }
