@@ -76,13 +76,14 @@ header nav li a {
     padding: 20px 20px 25px 20px;
     margin: 0;
     border-radius: 15px 15px 0 0;
-    background: linear-gradient(#ffff, #ffff 50%, #ffcf68 50%, #ffcf68);
+    background: linear-gradient(#ffff, #ffff 50%, #F1A501 50%, #F1A501);
     background-size: 100% 200%;
     transition: background 300ms;
 }
 
 nav li a:hover {
     background-position: 100% 100%;
+    color: white;
 }
 
 h2 {
@@ -303,6 +304,8 @@ h4 {
 }
 
 .section3 {
+    display: flex;
+    flex-flow: column wrap;
     background-image: url(/img/background_chef.png);
     margin-top: 100px;
     padding: 100px 0 600px 150px;
@@ -328,7 +331,7 @@ h4 {
     z-index: 1;
     margin-top: -230px;
     left: 260px;
-    border: 5px solid white;
+    border: 3px solid white;
     border-radius: 100%;
     background-color: white;
 }
@@ -803,8 +806,8 @@ footer nav ul{
     @keyframes cardanim2 {
         0% {translate: 0v; opacity: 0;}
         20% { translate: 0; opacity: 0;}
-        30% { translate: -110%; opacity: 100;}
-        50% { translate: -110%; opacity: 100;}
+        30% { translate: -113%; opacity: 100;}
+        50% { translate: -113%; opacity: 100;}
         60% { translate: -220%; opacity: 0;}
         100% { translate: -220%; opacity: 0;}
     }
@@ -819,9 +822,41 @@ footer nav ul{
 
     .card_container {
         flex-flow: column wrap;
+        align-content: center;
+        gap: 0;
     }
     .card_small {
+        display: flex;
+        width: 80%;
+        height: auto;
+        justify-content: left;
+    }
+    .card_small::before {
+        background-image: none;
+    }
 
+    .card_small figure 
+    {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    .card_small h5{
+        font-family: 'OpenSans-regular';
+        font-style: normal; 
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .card_small p{
+        font-family: 'Poppins-regular';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
     }
 }
 
