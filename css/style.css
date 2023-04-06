@@ -527,13 +527,14 @@ form :nth-child(5), form :nth-child(6){
 form .button {
     display: flex;
     flex-direction: column;
-    margin: 100px auto;
+    margin: 20px auto;
 }
 
 form button {
     font-size: 18px ;
     padding: 20px;
 }
+
 
 #formulaire .form_fsentence {
     color: #8d8d8d;
@@ -578,6 +579,11 @@ input {
     background-color: #007AFF;
     border-radius: 5px;
     border: none;
+}
+
+#formulaire button:hover {
+    transform: scale(1.2);
+    background-color: #4b93df;
 }
 
 #formulaire button img {
