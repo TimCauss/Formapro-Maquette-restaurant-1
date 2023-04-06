@@ -314,23 +314,37 @@ h4 {
     background-position-y: 0%;
     background-attachment: scroll;
     background-repeat: no-repeat;
+
+}
+
+.section3 figure{
+    visibility: collapse;
 }
 
 .video_container {
-    margin-bottom: 100px;
+    display: flex;
+    width: 305px;
+    height: 164px;
+    justify-content:center ;
+    border-radius: 15px;
 }
-
 .video_container img {
-    border-radius: 20px;
-    width: 300px;
+    z-index: 1;
+    border-radius: 15px;
 }
 
-.play_container svg {
-    fill: #F1A501;
-    position:absolute;
+.video_container .play_container {
+    position: absolute;
+    align-self: center;
+    justify-content: center;
+    translate: 10%;
     z-index: 1;
-    margin-top: -230px;
-    left: 260px;
+}
+.video_container svg {
+    fill: #F1A501;
+    z-index: 1;
+    width: 70x;
+    height: 70px;
     border: 3px solid white;
     border-radius: 100%;
     background-color: white;
@@ -338,6 +352,7 @@ h4 {
 
 svg:hover {
     fill: #fdc64f;
+    cursor: pointer;
 }
 
 .titre_section3 {
@@ -358,6 +373,16 @@ svg:hover {
     width: 30%;
     color: white;
     line-height: 30px;
+}
+.mini_chef {
+    visibility: collapse;
+    width: 0px;
+    height: 0px;
+}
+.wrapper #imgchef{
+    visibility: collapse;
+    width: 0px;
+    height: 0px;
 }
 
 .wrapper {
@@ -735,6 +760,15 @@ footer nav ul{
     }
 }
 
+@media (max-width: 1000px) {
+    .section3 h1 {
+        font-size: 50px;
+    }
+    .section3 p {
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 725px){
     .section1 h1 {
         font-family: "Volkhov-regular";
@@ -756,6 +790,59 @@ footer nav ul{
 
 }
 
+@media (max-width: 660px) {
+    .section3 {
+        flex-flow: column wrap;
+        background: none;
+        padding: 0px;
+    }
+    .video_container {
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    .video_container img {
+        max-width: 100%;
+        z-index: 1;
+        border-radius: 0px;
+    }
+    .video_container svg {
+        fill: #F1A501;
+        z-index: 1;
+        width: 70x;
+        height: 70px;
+        border: 3px solid white;
+        border-radius: 100%;
+        background-color: white;
+        max-width: 100%;
+    }
+    .section3 h1, .section3 p {
+        visibility: collapse;
+        font-size: 0px;
+        height: 0px;
+    }
+    .mini_chef {
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+    }
+    .mini_chef img {
+        max-width: 100%;
+    }
+    .wrapper {
+        position: static;
+        margin-top: 0px;
+        max-height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .wrapper img {
+        flex-grow: 2;
+        width: 100%;
+        height: 100%;
+    }
+
+}
 @media (max-width: 600px){
     .slider_container {
         overflow: hidden;
