@@ -422,7 +422,7 @@ svg:hover {
     border: 1px solid rgba(223, 105, 81, 1);
 }
 
-.section4 h2 {
+.section4 h2, .section4 h4{
     text-align: left;
 }
 
@@ -820,24 +820,21 @@ footer nav ul{
         text-align: center;
         font-size: 51px;
         background-size: 50%;
-        background-position: bottom 0px left 300px;
+        background-position: bottom 0px left 150px;
     }
     .section4 {
-        padding: 0 0 30px 0;
+        padding: 30px 0 30px 0;
+        margin: 0;
         justify-content: center;
         align-items: center;
     }
     .section4 h2 {
         text-align: center;
     }
-}
-
-@media (max-width: 725px){
-    .section1 h1 {
-        background-size: 50%;
-        background-position: bottom 0px left 150px;
+    .card_livr_container
+    {
+    max-width: 100%;
     }
-
 }
 
 /** MEDIA 660px */
