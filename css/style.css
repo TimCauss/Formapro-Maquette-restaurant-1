@@ -809,6 +809,8 @@ footer nav ul{
     }
 }
 
+
+/** MEDIA 725px*/
 @media (max-width: 725px){
     .section1 h1 {
         font-family: "Volkhov-regular";
@@ -819,6 +821,14 @@ footer nav ul{
         font-size: 51px;
         background-size: 50%;
         background-position: bottom 0px left 300px;
+    }
+    .section4 {
+        padding: 0 0 30px 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .section4 h2 {
+        text-align: center;
     }
 }
 
@@ -988,18 +998,6 @@ footer nav ul{
         font-weight: 500;
         font-size: 12px;
         line-height: 20px;
-    }
-    .section4 {
-        padding: 0 0 30px 0;
-        justify-content: center;
-        align-items: center;
-    }
-    .section4 h2 {
-        text-align: center;
-    }
-    .card_livraison {
-    }
-    .card_livraison img {
     }
 }
 
