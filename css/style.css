@@ -1,5 +1,9 @@
 @import url(/css/fonts.css);
 
+*, html {
+    scroll-behavior: smooth !important;
+}
+
 body  {
     background: #FFFFFF;
     margin: 0;
