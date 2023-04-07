@@ -1020,6 +1020,25 @@ footer nav ul{
         font-size: 12px;
         line-height: 20px;
     }
+    .jadoo {
+        display: flex;
+        justify-content: center;
+    }
+    .ft_left p {
+        text-align: center;
+    }
+    .reservation h2 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 142%;
+    }
+    .section4 h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 51px;
+        text-align: center;
+    }
 }
 
 
