@@ -612,10 +612,6 @@ footer {
     gap: 130px;
 }
 
-footer >* {
-    border: 1px solid rgba(223, 105, 81, 1);
-}
-
 footer p, footer a {
     color: #5E6282;
     text-decoration: none;
@@ -797,6 +793,7 @@ footer nav ul{
     }
 }
 
+/** MEDIA 1000px */
 @media (max-width: 1000px) {
     .section3 h1 {
         font-size: 50px;
@@ -806,6 +803,14 @@ footer nav ul{
     }
     footer {
         padding-top: 20px;
+        gap:30px;
+    }
+    .uber_eats p {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .btn_footer {
+        height: 50px;
     }
 }
 
@@ -1056,5 +1061,11 @@ footer nav ul{
     }
     .uber_eats img {
         scale: 0.7;
+    }
+    .jadoo {
+        margin-top: 70px;
+    }
+    .ftright {
+        text-align: center;
     }
 }
