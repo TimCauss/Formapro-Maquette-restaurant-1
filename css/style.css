@@ -5,6 +5,11 @@ body  {
     margin: 0;
 }
 
+img {
+    overflow-clip-margin: unset;
+    overflow: hidden;
+}
+
 body * {
     box-sizing: border-box;
     transition: all 350ms;
@@ -405,8 +410,16 @@ svg:hover {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: space-evenly;
+}
+
+
+.card_livraison >* {
+    border: 1px solid rgb(255, 37, 182);
+
+}
+
+.card_livr_container >* {
+    border: 1px solid rgba(223, 105, 81, 1);
 }
 
 .section4 h2 {
@@ -417,8 +430,22 @@ svg:hover {
     color: rgba(223, 105, 81, 1);
 }
 
-.section4 img {
-    margin-right: 20px;
+.section4 figure {
+    display: flex;
+    justify-content: start;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+.section4 figure img{
+    display: flex;
+    justify-content: start;
+    width: 70px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 
 .section4 a {
@@ -427,23 +454,22 @@ svg:hover {
 
 .card_livr_container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-flow: column;
+    max-width: 50%;
 }
 
 .card_livraison {
     display: flex;
-    flex-direction: row;
-    max-width: 400px;
-    height: 55px;
+    justify-content: start;
+    gap: 20px;
     padding: 20px 20px 20px 0px;
-    align-content: center;
 }
 
 
 .url_livr {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-content: start;
 }
 
@@ -452,7 +478,7 @@ svg:hover {
     font-size: 16px;
     color: black;
     margin-bottom: 0px;
-    margin-top: 0px;
+    margin-top: 5px;
 }
 
 .url_details {
@@ -460,11 +486,7 @@ svg:hover {
     font-size: 16px;
     color: #3e3f43;
     font-weight: 500;
-    margin-top: 0px;
-}
-
-.logo_tr{
-    margin-right: 50px;
+    margin-bottom: 5px;
 }
 
 .btn_s4 {
@@ -704,6 +726,7 @@ footer nav ul{
     visibility: collapse;
 }
 
+/** MEDIA 1080px */
 @media (max-width: 1080px){
     body * {
         padding: 0;
@@ -766,6 +789,7 @@ footer nav ul{
     }
 }
 
+/** MEDIA 1033px */
 @media (max-width:1033px) {
     .wrapper {
         position: relative;
@@ -806,6 +830,7 @@ footer nav ul{
 
 }
 
+/** MEDIA 660px */
 @media (max-width: 660px) {
     .section3 {
         flex-flow: column wrap;
@@ -836,6 +861,7 @@ footer nav ul{
         visibility: collapse;
         font-size: 0px;
         height: 0px;
+        margin: 0px;
     }
     .mini_chef {
         visibility: visible;
@@ -859,6 +885,8 @@ footer nav ul{
     }
 
 }
+
+/** MEDIA 600px */
 @media (max-width: 600px){
     .slider_container {
         overflow: hidden;
@@ -961,8 +989,22 @@ footer nav ul{
         font-size: 12px;
         line-height: 20px;
     }
+    .section4 {
+        padding: 0 0 30px 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .section4 h2 {
+        text-align: center;
+    }
+    .card_livraison {
+    }
+    .card_livraison img {
+    }
 }
 
+
+/** MEDIA 500px */
 @media (max-width: 500px){
     header >* {
         padding: 0;
