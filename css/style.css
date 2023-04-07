@@ -612,6 +612,10 @@ footer {
     gap: 130px;
 }
 
+footer >* {
+    border: 1px solid rgba(223, 105, 81, 1);
+}
+
 footer p, footer a {
     color: #5E6282;
     text-decoration: none;
@@ -650,13 +654,12 @@ footer > * {
 footer nav {
     display: flex;
     flex-direction: row;
-    gap: 55px;
 }
 
 footer nav ul{
     display: flex;
     flex-flow: column wrap;
-    justify-content: start;
+    align-items: flex-start;
 }
 
 .nav_footer {
@@ -690,6 +693,7 @@ footer nav ul{
 
 .uber_eats {
     width: 221.17px ;
+    text-align: center;
 }
 
 .ftright{
@@ -800,6 +804,9 @@ footer nav ul{
     .section3 p {
         font-size: 12px;
     }
+    footer {
+        padding-top: 20px;
+    }
 }
 
 /** MEDIA 760px */
@@ -838,6 +845,14 @@ footer nav ul{
     .card_livr_container
     {
     max-width: 100%;
+    }
+    footer {
+        flex-flow: column;
+        gap:20px;
+        align-items: center;
+    }
+    .ft_left {
+        order:3;
     }
 }
 
@@ -1030,5 +1045,16 @@ footer nav ul{
         padding-left: 0;
         justify-self: end;
         margin-right: 20px;
+    }
+    footer >*{
+        justify-content: center;
+        width: 100%;
+    }
+    .uber_eats {
+        width: 90%;
+        gap: 15px;
+    }
+    .uber_eats img {
+        scale: 0.7;
     }
 }
