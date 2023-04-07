@@ -46,10 +46,10 @@ header {
 
 @keyframes logoanim {
   10%, 30%, 50%, 70%, 90% {
-  transform: rotate(-5deg);
+  transform: rotate(-10deg);
   }
   20%, 40%, 60%, 80% {
-  transform: rotate(5deg);
+  transform: rotate(10deg);
   }
 }
 
