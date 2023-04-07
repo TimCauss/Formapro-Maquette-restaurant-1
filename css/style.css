@@ -412,16 +412,6 @@ svg:hover {
     flex-direction: column;
 }
 
-
-.card_livraison >* {
-    border: 1px solid rgb(255, 37, 182);
-
-}
-
-.card_livr_container >* {
-    border: 1px solid rgba(223, 105, 81, 1);
-}
-
 .section4 h2, .section4 h4{
     text-align: left;
 }
@@ -798,6 +788,10 @@ footer nav ul{
     .section4 {
         padding-top: 20px;
     }
+    .reservation {
+        flex-direction: row;
+        padding-top: 50px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -806,6 +800,17 @@ footer nav ul{
     }
     .section3 p {
         font-size: 12px;
+    }
+}
+
+/** MEDIA 760px */
+@media (max-width: 760px) {
+    .form_container2{
+        visibility: collapse;
+        width: 0px;
+    }
+    .form_container1{
+        width: 100%;
     }
 }
 
