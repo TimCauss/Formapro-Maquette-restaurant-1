@@ -292,7 +292,7 @@ h4 {
 .card_small::before{
     content: " ";
     transition: transform 700ms, opacity 700ms;
-    transform: rotate(-90deg);
+    transform: rotate(-45deg);
     background-image: url(/img/decoration_rose.svg);
     background-repeat: no-repeat;
     position: absolute;
