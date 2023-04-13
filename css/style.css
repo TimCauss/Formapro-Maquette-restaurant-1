@@ -580,8 +580,14 @@ input {
     font-size: 13px;
     color: #989898;
     border: none;
+    padding-bottom: 10px;
     border-bottom: 1px #989898 solid;
     transition: transform 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid #007AFF;
 }
 
 #formulaire button {
