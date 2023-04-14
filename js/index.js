@@ -41,3 +41,43 @@ form.addEventListener("submit", (e) => {
     messagePlaceholder.classList.add("inputFalse");
   }
 });
+
+//on Déclare le boutton du menu dans une constante
+const btnBurger = document.querySelector(".btn_burger button");
+//On déclare le manu entier dans une constante
+const menu = document.querySelector(".mainnav");
+//on déclare le header
+const header = document.querySelector("header");
+//on déclare une var pour la taille de l'écran
+let w = document.documentElement.clientWidth || window.innerWidth;
+
+btnBurger.addEventListener("click", () => {
+  if (w < 1080) {
+    menu.style.cssText = `
+    position: relative;
+    left: 0px;
+    `;
+  }
+  if (w < 810) {
+    menu.style.cssText = `
+    flex-flox: column, wrap;
+    display: flex;
+    position: absolute;
+    left:0px;
+    height: 50%;
+    `;
+  }
+});
+
+header.addEventListener("mouseleave", () => {
+  if (w < 1080) {
+    menu.style.display = "none";
+  }
+});
+
+window.addEventListener("resize", () => {
+  w = document.documentElement.clientWidth || window.innerWidth;
+  if (w > 1080) {
+    menu.style.display = "flex";
+  }
+});

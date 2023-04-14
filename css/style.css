@@ -68,17 +68,19 @@ header {
 nav {
   display: flex;
   margin-right: 130px;
+  transition: 0.5s, ease;
 }
 
 ul {
   display: flex;
   align-items: center;
   margin: 0;
+  transition: 0.5s, ease;
 }
 ul li {
   list-style: none;
   margin-right: 10px;
-  transition: none;
+  transition: 0.5s, ease;
 }
 
 header nav li a {
@@ -751,7 +753,7 @@ footer nav ul {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
+    padding: 20px;
   }
 
   .btn_burger {
@@ -764,13 +766,12 @@ footer nav ul {
     border: none;
     margin-right: min(20px);
   }
-  header nav ul li {
-    visibility: collapse;
-    width: 0px;
-  }
-  header nav ul li:last-child {
-    visibility: visible;
-    width: auto;
+  .mainnav {
+    display: flex;
+    position: absolute;
+    flex-shrink: 0;
+    left: -1000px;
+    transition: 0.5s, ease;
   }
   .section1 {
     padding-top: 45.86px;
@@ -1111,6 +1112,22 @@ footer nav ul {
     line-height: 51px;
     text-align: center;
   }
+  .textHidden {
+    display: none;
+  }
+  #contact h2 {
+    width: 100%;
+    margin: 10px;
+  }
+  .form_title {
+    display: none;
+  }
+  .form_fsentence {
+    text-align: center;
+  }
+  .form_container1 {
+    padding: 15px;
+  }
 }
 
 /** MEDIA 500px */
@@ -1118,17 +1135,6 @@ footer nav ul {
   header > * {
     padding: 0;
     margin: 0;
-  }
-  header nav ul li:last-child {
-    visibility: collapse;
-    width: 0px;
-  }
-  header nav {
-    width: 0px;
-    visibility: collapse;
-  }
-  header ul {
-    width: 0;
   }
   header {
     justify-content: end;
