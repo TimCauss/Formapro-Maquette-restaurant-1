@@ -51,33 +51,12 @@ const header = document.querySelector("header");
 //on déclare une var pour la taille de l'écran
 let w = document.documentElement.clientWidth || window.innerWidth;
 
-/* btnBurger.addEventListener("click", () => {
-  if (w < 1080) {
-    menu.style.cssText = `
-    position: relative;
-    left: 0px;
-    `;
-  }
-  if (w < 810) {
-    menu.style.cssText = `
-    flex-flox: column, wrap;
-    display: flex;
-    position: absolute;
-    left:0px;
-    height: 50%;
-    `;
-  }
-}); */
-/* 
-header.addEventListener("mouseleave", () => {
-  if (w < 1080) {
-    menu.style.display = "none";
-  }
+const navi = document.querySelector(".navi");
+
+btnBurger.addEventListener("click", () => {
+  menu.style.transform = "translateX(0px)";
 });
 
-window.addEventListener("resize", () => {
-  w = document.documentElement.clientWidth || window.innerWidth;
-  if (w > 1080) {
-    menu.style.display = "flex";
-  }
-}); */
+menu.addEventListener("mouseleave", () => {
+  menu.style.transform = "translateX(-300px)";
+});
