@@ -69,14 +69,6 @@ window.addEventListener("resize", () => {
   }
 });
 
-/* window.on("resize", () => {
-  if (window.width >= 1080) {
-    flag = true;
-  } else {
-    flag = false;
-  }
-}); */
-
 menu.addEventListener("mouseleave", () => {
   if (flag) {
     menu.style.transform = "translateX(-300px)";
