@@ -57,6 +57,28 @@ btnBurger.addEventListener("click", () => {
   menu.style.transform = "translateX(0px)";
 });
 
+let flag = false;
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth <= 1080) {
+    flag = true;
+    menu.style.transform = "translateX(-300px)";
+  } else {
+    flag = false;
+    menu.style.transform = "translateX(0px)";
+  }
+});
+
+/* window.on("resize", () => {
+  if (window.width >= 1080) {
+    flag = true;
+  } else {
+    flag = false;
+  }
+}); */
+
 menu.addEventListener("mouseleave", () => {
-  menu.style.transform = "translateX(-300px)";
+  if (flag) {
+    menu.style.transform = "translateX(-300px)";
+  }
 });

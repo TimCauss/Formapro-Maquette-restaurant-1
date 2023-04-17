@@ -80,7 +80,6 @@ nav {
 .navi li {
   list-style: none;
   margin-right: 10px;
-  transition: 0.5s, ease;
 }
 
 header nav li a {
