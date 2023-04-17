@@ -51,7 +51,7 @@ const header = document.querySelector("header");
 //on déclare une var pour la taille de l'écran
 let w = document.documentElement.clientWidth || window.innerWidth;
 
-btnBurger.addEventListener("click", () => {
+/* btnBurger.addEventListener("click", () => {
   if (w < 1080) {
     menu.style.cssText = `
     position: relative;
@@ -67,8 +67,8 @@ btnBurger.addEventListener("click", () => {
     height: 50%;
     `;
   }
-});
-
+}); */
+/* 
 header.addEventListener("mouseleave", () => {
   if (w < 1080) {
     menu.style.display = "none";
@@ -80,4 +80,4 @@ window.addEventListener("resize", () => {
   if (w > 1080) {
     menu.style.display = "flex";
   }
-});
+}); */
