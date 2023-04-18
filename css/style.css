@@ -879,6 +879,10 @@ footer nav ul {
     font-size: 12px;
   }
 
+  .section4 {
+    background-image: none;
+  }
+
   footer {
     padding-top: 20px;
     gap: 30px;
