@@ -32,7 +32,7 @@ header {
 }
 
 .logo_container {
-  margin-left: 150px;
+  padding-left: 10%;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
