@@ -50,6 +50,7 @@ header {
 }
 
 @keyframes logoanim {
+
   10%,
   30%,
   50%,
@@ -57,6 +58,7 @@ header {
   90% {
     transform: rotate(-10deg);
   }
+
   20%,
   40%,
   60%,
@@ -77,6 +79,7 @@ nav {
   margin: 0;
   transition: 0.5s, ease;
 }
+
 .navi li {
   list-style: none;
   margin-right: 10px;
@@ -192,12 +195,12 @@ h5 {
   text-align: center;
 }
 
-.section2 > p,
+.section2>p,
 h5 {
   margin: 25px;
 }
 
-.section2 > p {
+.section2>p {
   color: #5e6282;
   font-size: 16px;
   font-weight: 550;
@@ -339,6 +342,7 @@ h4 {
   justify-content: center;
   border-radius: 15px;
 }
+
 .video_container img {
   z-index: 1;
   border-radius: 15px;
@@ -351,6 +355,7 @@ h4 {
   translate: 10%;
   z-index: 1;
 }
+
 .video_container svg {
   fill: #f1a501;
   z-index: 1;
@@ -385,9 +390,11 @@ svg:hover {
   color: white;
   line-height: 30px;
 }
+
 .mini_chef {
   display: none;
 }
+
 .wrapper #imgchef {
   visibility: collapse;
   width: 0px;
@@ -433,6 +440,7 @@ svg:hover {
   margin-inline-start: 0;
   margin-inline-end: 0;
 }
+
 .section4 figure img {
   display: flex;
   justify-content: start;
@@ -527,7 +535,7 @@ svg:hover {
   margin: 0;
 }
 
-form label + input {
+form label+input {
   width: 100%;
 }
 
@@ -540,23 +548,28 @@ form :nth-child(6) {
   gap: 20px;
   width: 45%;
 }
+
 form :nth-child(5),
 form :nth-child(6) {
   width: 100%;
 }
+
 form .button {
   display: flex;
   flex-direction: column;
   margin: 20px auto;
 }
+
 form button {
   font-size: 18px;
   padding: 20px;
 }
+
 #formulaire .form_fsentence {
   color: #8d8d8d;
   margin: 0;
 }
+
 .fmain_container {
   display: flex;
   flex-direction: row;
@@ -564,18 +577,21 @@ form button {
   border-radius: 20px;
   box-shadow: 5px 5px 5px 5px #dedfe2;
 }
+
 .form_container1 {
   height: 540px;
   width: 50%;
   border-radius: 20px 0 20px 0;
   padding: 40px 20px;
 }
+
 .form_container2 {
   width: 50%;
   background-image: url(/img/illustration_formulaire.jpg);
   background-size: cover;
   border-radius: 0 20px 20px 0px;
 }
+
 input {
   font-family: "poppins-regular";
   font-weight: 500;
@@ -615,13 +631,16 @@ input:not(:placeholder-shown) {
   border-radius: 5px;
   border: none;
 }
+
 #formulaire button:hover {
   transform: scale(1.2);
   background-color: #4b93df;
 }
+
 #formulaire button img {
   margin-right: 10px;
 }
+
 footer {
   margin-top: 50px;
   padding-top: 82px;
@@ -631,11 +650,13 @@ footer {
   justify-content: center;
   gap: 130px;
 }
+
 footer p,
 footer a {
   color: #5e6282;
   text-decoration: none;
 }
+
 .ft_left {
   font-family: "Poppins-regular";
   font-style: normal;
@@ -666,7 +687,7 @@ footer a {
   height: 40.61px;
 }
 
-footer > * {
+footer>* {
   margin: 0;
   padding: 0;
 }
@@ -709,6 +730,11 @@ footer nav ul {
   border: none;
   border-radius: 25px;
   width: 50%;
+  transition: 200ms;
+}
+
+.btn_footer:hover {
+  scale: 1.05;
 }
 
 .uber_eats {
@@ -745,9 +771,11 @@ footer nav ul {
     padding: 0;
     margin: 0;
   }
+
   .logo_container {
     margin: 0;
   }
+
   header {
     display: flex;
     flex-flow: row nowrap;
@@ -761,11 +789,13 @@ footer nav ul {
     position: relative;
     visibility: visible;
   }
+
   .btn_burger button {
     background-color: white;
     border: none;
     margin-right: min(20px);
   }
+
   .mainnav {
     background-color: white;
     height: 30vh;
@@ -775,6 +805,7 @@ footer nav ul {
     top: 0px;
     left: 0px;
   }
+
   .navi {
     width: 100%;
     flex-direction: column;
@@ -783,6 +814,7 @@ footer nav ul {
     justify-content: space-between;
     transition: 1s;
   }
+
   .navi li {
     font-size: 20px;
     text-align: center;
@@ -790,22 +822,26 @@ footer nav ul {
     width: 100%;
     transition: 1s;
   }
+
   .section1 {
     padding-top: 45.86px;
     justify-content: center;
     text-align: center;
   }
+
   .section1 h1 {
     width: 100%;
     background-size: auto;
     background-position: bottom 10px left 250px;
   }
+
   .section1 article {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
   }
+
   .section1 p {
     font-family: Poppins;
     font-size: 15px;
@@ -822,9 +858,11 @@ footer nav ul {
     position: relative;
     display: flex;
   }
+
   .section4 {
     padding-top: 20px;
   }
+
   .reservation {
     flex-direction: row;
     padding-top: 50px;
@@ -836,17 +874,21 @@ footer nav ul {
   .section3 h1 {
     font-size: 50px;
   }
+
   .section3 p {
     font-size: 12px;
   }
+
   footer {
     padding-top: 20px;
     gap: 30px;
   }
+
   .uber_eats p {
     margin-top: 10px;
     margin-bottom: 15px;
   }
+
   .btn_footer {
     height: 50px;
   }
@@ -858,6 +900,7 @@ footer nav ul {
     visibility: collapse;
     width: 0px;
   }
+
   .form_container1 {
     width: 100%;
   }
@@ -875,23 +918,28 @@ footer nav ul {
     background-size: 50%;
     background-position: bottom 0px left 150px;
   }
+
   .section4 {
     padding: 30px 0 30px 0;
     margin: 0;
     justify-content: center;
     align-items: center;
   }
+
   .section4 h2 {
     text-align: center;
   }
+
   .card_livr_container {
     max-width: 100%;
   }
+
   footer {
     flex-flow: column;
     gap: 20px;
     align-items: center;
   }
+
   .ft_left {
     order: 3;
   }
@@ -904,16 +952,19 @@ footer nav ul {
     background: none;
     padding: 0px;
   }
+
   .video_container {
     width: 100%;
     height: auto;
     display: flex;
   }
+
   .video_container img {
     max-width: 100%;
     z-index: 1;
     border-radius: 0px;
   }
+
   .video_container svg {
     fill: #f1a501;
     z-index: 1;
@@ -924,6 +975,7 @@ footer nav ul {
     background-color: white;
     max-width: 100%;
   }
+
   .section3 h1,
   .section3 p {
     visibility: collapse;
@@ -931,13 +983,16 @@ footer nav ul {
     height: 0px;
     margin: 0px;
   }
+
   .mini_chef {
     display: block;
   }
+
   .mini_chef img {
     width: 100%;
     object-fit: cover;
   }
+
   .wrapper {
     position: static;
     margin-top: -50px;
@@ -945,6 +1000,7 @@ footer nav ul {
     display: flex;
     flex-flow: column wrap;
   }
+
   .wrapper img {
     /* flex-grow: 2; */
     width: 100%;
@@ -958,6 +1014,7 @@ footer nav ul {
   .slider_container {
     overflow: hidden;
   }
+
   .card_container1 {
     padding: 20px 0px 20px 0px;
     margin: 0;
@@ -965,6 +1022,7 @@ footer nav ul {
     justify-content: start;
     gap: 0px;
   }
+
   .card1 {
     width: 80%;
     border: none;
@@ -980,111 +1038,135 @@ footer nav ul {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
   }
+
   .c2 {
     animation-name: cardanim2;
     animation-duration: 10s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
   }
+
   .c3 {
     animation-name: cardanim3;
     animation-duration: 10s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
   }
+
   @keyframes cardanim {
     0% {
       translate: 0;
       opacity: 100;
     }
+
     20% {
       translate: 0%;
       opacity: 100;
     }
+
     30% {
       translate: -110%;
       opacity: 0;
     }
+
     35% {
       translate: 115%;
       opacity: 0;
     }
+
     80% {
       translate: 115%;
       opacity: 0;
     }
+
     90% {
       translate: 0%;
       opacity: 100;
     }
+
     100% {
       translate: 0;
       opacity: 100;
     }
   }
+
   @keyframes cardanim2 {
     0% {
       translate: 0v;
       opacity: 0;
     }
+
     20% {
       translate: 0;
       opacity: 0;
     }
+
     30% {
       translate: -113%;
       opacity: 100;
     }
+
     50% {
       translate: -113%;
       opacity: 100;
     }
+
     60% {
       translate: -220%;
       opacity: 0;
     }
+
     100% {
       translate: -220%;
       opacity: 0;
     }
   }
+
   @keyframes cardanim3 {
     0% {
       translate: 0;
       opacity: 0;
     }
+
     50% {
       translate: -110%;
       opacity: 0;
     }
+
     60% {
       translate: -225%;
       opacity: 100;
     }
+
     80% {
       translate: -225%;
       opacity: 100;
     }
+
     90% {
       translate: -330%;
       opacity: 0;
     }
+
     100% {
       translate: -330%;
       opacity: 0;
     }
   }
+
   .card_container {
     flex-flow: column wrap;
     align-content: center;
     gap: 0;
   }
+
   .card_small {
     display: flex;
     width: 80%;
     height: auto;
     justify-content: left;
   }
+
   .card_small::before {
     background-image: none;
   }
@@ -1096,6 +1178,7 @@ footer nav ul {
     text-align: left;
     justify-content: space-between;
   }
+
   .card_small h5 {
     font-family: "OpenSans-regular";
     font-style: normal;
@@ -1103,6 +1186,7 @@ footer nav ul {
     font-size: 16px;
     line-height: 22px;
   }
+
   .card_small p {
     font-family: "Poppins-regular";
     font-style: normal;
@@ -1110,18 +1194,22 @@ footer nav ul {
     font-size: 12px;
     line-height: 20px;
   }
+
   .jadoo {
     display: flex;
     justify-content: center;
   }
+
   .ft_left p {
     text-align: center;
   }
+
   .reservation h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 142%;
   }
+
   .section4 h2 {
     font-style: normal;
     font-weight: 700;
@@ -1129,19 +1217,24 @@ footer nav ul {
     line-height: 51px;
     text-align: center;
   }
+
   .textHidden {
     display: none;
   }
+
   #contact h2 {
     width: 100%;
     margin: 10px;
   }
+
   .form_title {
     display: none;
   }
+
   .form_fsentence {
     text-align: center;
   }
+
   .form_container1 {
     padding: 15px;
   }
@@ -1149,35 +1242,43 @@ footer nav ul {
 
 /** MEDIA 500px */
 @media (max-width: 500px) {
-  header > * {
+  header>* {
     padding: 0;
     margin: 0;
   }
+
   header {
     justify-content: end;
   }
+
   header .btn_burger {
     margin-right: auto;
   }
+
   header .logo_container {
     padding-left: 0;
     justify-self: end;
     margin-right: 20px;
   }
-  footer > * {
+
+  footer>* {
     justify-content: center;
     width: 100%;
   }
+
   .uber_eats {
     width: 90%;
     gap: 15px;
   }
+
   .uber_eats img {
     scale: 0.7;
   }
+
   .jadoo {
     margin-top: 70px;
   }
+
   .ftright {
     text-align: center;
   }
